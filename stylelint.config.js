@@ -100,6 +100,7 @@ module.exports = {
       extends: ['stylelint-config-standard', 'stylelint-config-recommended-vue', 'stylelint-config-standard-scss'],
       rules: {
         'no-duplicate-selectors': [true, { disallowInList: true }],
+        'scss/at-import-partial-extension': ['always', { except: ['scss'] }],
       },
     },
   ],
