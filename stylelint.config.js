@@ -92,6 +92,7 @@ module.exports = {
             ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted'],
           },
         ],
+        'selector-type-no-unknown': null,
       },
     },
     {
@@ -101,6 +102,7 @@ module.exports = {
       rules: {
         'no-duplicate-selectors': [true, { disallowInList: true }],
         'scss/at-import-partial-extension': ['always', { except: ['scss'] }],
+        'selector-type-no-unknown': null,
       },
     },
   ],
