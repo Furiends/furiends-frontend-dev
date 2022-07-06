@@ -157,7 +157,7 @@ module.exports = {
     'no-this-before-super': 2,
     'no-throw-literal': 2,
     'no-trailing-spaces': 0,
-    'no-undef': 2,
+    'no-undef': 1,
     'no-undef-init': 2,
     'no-unexpected-multiline': 2,
     'no-unmodified-loop-condition': 2,
@@ -171,7 +171,7 @@ module.exports = {
     'no-unreachable': 2,
     'no-unsafe-finally': 2,
     'no-unused-vars': [
-      2,
+      1,
       {
         vars: 'all',
         args: 'none',
