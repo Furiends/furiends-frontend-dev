@@ -101,6 +101,7 @@
     "autoprefixer": "^8.0.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-import": "^1.11.0",
+    "better-mock": "^0.3.4",
     "cross-env": "^7.0.2",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
