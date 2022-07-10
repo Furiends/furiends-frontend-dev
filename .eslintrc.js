@@ -46,6 +46,7 @@ module.exports = {
         },
       },
     ],
+	"unexpected-character-in-attribute-name": false,
     'vue/singleline-html-element-content-newline': 'off',
     'vue/multiline-html-element-content-newline': 'off',
     'vue/name-property-casing': 0,
@@ -265,4 +266,8 @@ module.exports = {
       },
     },
   ],
+    globals: {
+      uni: true, 
+      wx: true
+    }
 };

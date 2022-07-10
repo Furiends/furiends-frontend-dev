@@ -3,13 +3,23 @@
     "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
   },
   "pages": [
+	 
+	  {
+	  		    "path" : "pages/orgAdoptionProgramManagement/orgAdoptionProgramManagement",
+	  		    "style" :                                                                                    
+	  		    {
+	  		        "navigationBarTitleText": "",
+	  		        "enablePullDownRefresh": false
+	  		    }
+	  		    
+	  		},
     {
       "path": "pages/myGovernment/myGovernment"
-    },
-    {
-      "path": "pages/myPets/myPets"
-    }
-  ],
+    }, {
+	    "path": "pages/myPets/myPets"
+	  }
+    
+    ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Furiends",
