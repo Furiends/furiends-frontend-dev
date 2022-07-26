@@ -1,9 +1,15 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
-    <u-button type="primary" text="确定"></u-button>
+    <u-button type="primary" text="确定" @click="navto()"></u-button>
     <view>
       <text class="title">{{ title }}</text>
+    </view>
+    <view class="pro">
+      <u-steps :current="0">
+        <u-steps-item iconSize="24"></u-steps-item>
+        <u-steps-item iconSize="24"></u-steps-item>
+        <u-steps-item iconSize="24"></u-steps-item>
+      </u-steps>
     </view>
   </view>
 </template>
@@ -12,11 +18,17 @@
   export default {
     data() {
       return {
-        title: 'Hello,test2223333',
+        title: 'Hello,test',
       };
     },
     onLoad() {},
-    methods: {},
+    methods: {
+      navto() {
+        uni.navigateTo({
+          url: '/pages/welfareAndServices/welfareAndServices',
+        });
+      },
+    },
   };
 </script>
 

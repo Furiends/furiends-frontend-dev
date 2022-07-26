@@ -10,6 +10,12 @@
       "path": "pages/myPets/myPets"
     },
     {
+      "path": "pages/welfareAndServices/welfareAndServices",
+      "style": {
+        "navigationBarTitleText": "机构服务/福利"
+      }
+    },
+    {
       "path": "pages/getInstituteInfo/getInstituteInfo"
     }
   ],
