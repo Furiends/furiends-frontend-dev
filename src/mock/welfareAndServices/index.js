@@ -9,7 +9,7 @@ const successRsp = {
   msg: 'success',
 };
 
-for (let i = 0; i < 10; i += 1) {
+for (let i = 0; i < 49; i += 1) {
   const obj = {
     id: Random.integer(0, 99),
     isSelected: Random.integer(0, 1),

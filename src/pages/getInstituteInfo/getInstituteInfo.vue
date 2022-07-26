@@ -1,12 +1,15 @@
 <template>
   <view class="box">
     <u--form labelPosition="top" :model="institudeInfo" ref="infoForm" :rules="rules">
-      <view class="progress-bar" dot>
-        <u-steps :current="current">
-          <u-steps-item iconSize="24"></u-steps-item>
-          <u-steps-item iconSize="24"></u-steps-item>
-          <u-steps-item iconSize="24"></u-steps-item>
-        </u-steps>
+      <view class="progress-container">
+        <view class="progress-des">基本信息填写 {{ active + 1 }}/3</view>
+        <u-line-progress
+          :percentage="percentage"
+          :showText="false"
+          height="8"
+          activeColor="rgb(151,151,151,0.3)"
+          inactiveColor="rgb(151,151,151,0.15)"
+        ></u-line-progress>
       </view>
       <view class="form-group" v-if="active === 0">
         <view class="form-step">
@@ -79,6 +82,7 @@
       return {
         current: 0,
         active: 0,
+        percentage: 35,
         institudeInfo: {
           institudeName: '',
           managerName: '',
@@ -121,8 +125,10 @@
         if (this.active === 0) {
           return;
         }
+
         this.active -= 1;
         this.current -= 1;
+        this.percentage -= 35;
       },
       async clickNextBtn() {
         const isFilled = await this.$refs.infoForm.validate();
@@ -136,6 +142,7 @@
 
         this.active += 1;
         this.current += 1;
+        this.percentage += 36;
       },
       submit() {
         this.$refs.infoForm.validate().then((res) => {
@@ -154,17 +161,12 @@
     flex-direction: column;
   }
 
-  ::v-deep .progress-bar {
+  .progress-container {
     margin-top: 60rpx;
     margin-bottom: 50rpx;
 
-    .u-steps-item__wrapper {
-      background-color: #e5e5e5;
-    }
-
-    .u-steps-item__wrapper__circle {
-      height: 60rpx;
-      width: 60rpx;
+    .progress-des {
+      margin-bottom: 20rpx;
     }
   }
 

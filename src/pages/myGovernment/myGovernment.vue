@@ -4,13 +4,6 @@
     <view>
       <text class="title">{{ title }}</text>
     </view>
-    <view class="pro">
-      <u-steps :current="0">
-        <u-steps-item iconSize="24"></u-steps-item>
-        <u-steps-item iconSize="24"></u-steps-item>
-        <u-steps-item iconSize="24"></u-steps-item>
-      </u-steps>
-    </view>
   </view>
 </template>
 
@@ -18,7 +11,7 @@
   export default {
     data() {
       return {
-        title: 'Hello,test',
+        title: 'Hello,test2223333',
       };
     },
     onLoad() {},
